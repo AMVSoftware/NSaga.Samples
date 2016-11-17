@@ -9,6 +9,11 @@ public class ShoppingBasketData
     public Guid CustomerId { get; set; }
     public List<BasketProducts> BasketProducts { get; set; }
     public bool BasketCheckedout { get; set; }
+
+    public ShoppingBasketData()
+    {
+        BasketProducts = new List<BasketProducts>();
+    }
 }
 
 
@@ -32,12 +37,14 @@ public class ShoppingBasketSaga : ISaga<ShoppingBasketData>,
         SagaData = new ShoppingBasketData();
     }
 
+
     public OperationResult Initiate(StartShopping message)
     {
         SagaData.CustomerId = message.CustomerId;
-
+        Console.WriteLine("Starting Shopping Saga");
         return new OperationResult(); // no errors to report
     }
+
 
     public OperationResult Consume(AddProductIntoBasket message)
     {
@@ -48,11 +55,15 @@ public class ShoppingBasketSaga : ISaga<ShoppingBasketData>,
             ItemCount = message.ItemCount,
             ItemPrice = message.ItemPrice,
         });
+        Console.WriteLine("Adding a product into shopping basket");
         return new OperationResult(); // no possibility to fail
     }
 
+
     public OperationResult Consume(NotifyCustomerAboutBasket message)
     {
+        Console.WriteLine("Trying to send notification email");
+
         var customer = customerRepository.Find(SagaData.CustomerId);
         if (String.IsNullOrEmpty(customer.Email))
         {
