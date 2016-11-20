@@ -33,8 +33,6 @@ public class ShoppingBasketSaga : ISaga<ShoppingBasketData>,
     {
         this.emailService = emailService;
         this.customerRepository = customerRepository;
-        Headers = new Dictionary<string, string>();
-        SagaData = new ShoppingBasketData();
     }
 
 

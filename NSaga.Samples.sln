@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		nuget.config = nuget.config
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorLess", "MediatorLess\MediatorLess.csproj", "{371D5CE1-5022-44DD-8A4C-6993C9FB03E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{527947EE-795C-4264-98F9-1042187DDA85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{527947EE-795C-4264-98F9-1042187DDA85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{527947EE-795C-4264-98F9-1042187DDA85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{371D5CE1-5022-44DD-8A4C-6993C9FB03E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{371D5CE1-5022-44DD-8A4C-6993C9FB03E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{371D5CE1-5022-44DD-8A4C-6993C9FB03E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{371D5CE1-5022-44DD-8A4C-6993C9FB03E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
