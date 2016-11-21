@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BasicUsage
+namespace Sagas.ShoppingBasket
 {
     public interface IEmailService
     {

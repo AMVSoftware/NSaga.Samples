@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using BasicUsage;
 using NSaga;
+using Sagas.ShoppingBasket;
 
 
 public class ShoppingBasketData

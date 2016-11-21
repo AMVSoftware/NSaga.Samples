@@ -1,21 +1,25 @@
 ﻿using System;
 using BasicUsage;
 using NSaga;
+using NSaga.SimpleInjector;
 using Sagas.ShoppingBasket;
+using SimpleInjector;
 
 class Program
 {
     static void Main(string[] args)
     {
-        var builder = Wireup.UseInternalContainer()
-                            .UseSqlServer()
-                            .WithConnectionStringName("NSagaDatabase");
+        var container = new Container();
 
-        // register dependencies for sagas
-        builder.Register(typeof(IEmailService), typeof(ConsoleEmailService));
-        builder.Register(typeof(ICustomerRepository), typeof(SimpleCustomerRepository));
+        container.RegisterNSagaComponents()
+            .UseSqlServer()
+            .WithConnectionString(@"Data Source=.\SQLEXPRESS;integrated security=SSPI;Initial Catalog=NSaga");
 
-        var mediator = builder.ResolveMediator(); 
+        container.Register<IEmailService, ConsoleEmailService>();
+        container.Register<ICustomerRepository, SimpleCustomerRepository>();
+
+        var mediator = container.GetInstance<ISagaMediator>();
+        var repository = container.GetInstance<ISagaRepository>();
 
         var correlationId = Guid.NewGuid();
 
@@ -37,7 +41,6 @@ class Program
         });
 
         // retrieve the saga from the storage
-        var repository = builder.ResolveRepository();
         var saga = repository.Find<ShoppingBasketSaga>(correlationId);
 
         // you can access saga data this way
