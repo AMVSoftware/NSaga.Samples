@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sagas", "Sagas\Sagas.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleInjectorSample", "SimpleInjector\SimpleInjectorSample.csproj", "{5FD3860B-2327-424A-84FF-464D12FE2AE0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutofacSample", "AutofacSample\AutofacSample.csproj", "{2222757D-C64E-4390-B224-B30D6D6CEEED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{5FD3860B-2327-424A-84FF-464D12FE2AE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FD3860B-2327-424A-84FF-464D12FE2AE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FD3860B-2327-424A-84FF-464D12FE2AE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2222757D-C64E-4390-B224-B30D6D6CEEED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2222757D-C64E-4390-B224-B30D6D6CEEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2222757D-C64E-4390-B224-B30D6D6CEEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2222757D-C64E-4390-B224-B30D6D6CEEED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
