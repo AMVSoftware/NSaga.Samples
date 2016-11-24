@@ -37,8 +37,8 @@
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="NSaga, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NSaga.1.1.0\lib\NSaga.dll</HintPath>
+    <Reference Include="NSaga, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NSaga.1.1.1\lib\net45\NSaga.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />

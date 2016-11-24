@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{513B6622-03DA-40D4-8031-2DE1EE68FFDF}</ProjectGuid>
+    <ProjectGuid>{21905C6C-B2C3-49D4-802B-A922B84729EF}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConfigurationSamples</RootNamespace>
-    <AssemblyName>ConfigurationSamples</AssemblyName>
+    <RootNamespace>Diagnostics</RootNamespace>
+    <AssemblyName>Diagnostics</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,28 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autofac, Version=4.2.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
-      <HintPath>..\packages\Autofac.4.2.1\lib\net45\Autofac.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="NSaga, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NSaga.1.1.1\lib\net45\NSaga.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="NSaga.Autofac, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NSaga.Autofac.1.1.1\lib\net45\NSaga.Autofac.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="NSaga.SimpleInjector, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NSaga.SimpleInjector.1.1.1\lib\net45\NSaga.SimpleInjector.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="SimpleInjector, Version=3.3.1.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
-      <HintPath>..\packages\SimpleInjector.3.3.1\lib\net45\SimpleInjector.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -67,18 +51,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddPipelineHook.cs" />
-    <Compile Include="DummyMessageSerialiser.cs" />
-    <Compile Include="DummyPipelineHook.cs" />
-    <Compile Include="DummySagaFactory.cs" />
-    <Compile Include="DummySagaRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReplaceAssemblies.cs" />
-    <Compile Include="ReplaceMessageSerialiser.cs" />
-    <Compile Include="ReplaceRepository.cs" />
-    <Compile Include="ReplaceSagaFactory.cs" />
-    <Compile Include="StaticReference.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

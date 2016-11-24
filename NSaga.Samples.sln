@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleInjectorSample", "Sim
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutofacSample", "AutofacSample\AutofacSample.csproj", "{2222757D-C64E-4390-B224-B30D6D6CEEED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diagnostics", "Diagnostics\Diagnostics.csproj", "{21905C6C-B2C3-49D4-802B-A922B84729EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{2222757D-C64E-4390-B224-B30D6D6CEEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2222757D-C64E-4390-B224-B30D6D6CEEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2222757D-C64E-4390-B224-B30D6D6CEEED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21905C6C-B2C3-49D4-802B-A922B84729EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21905C6C-B2C3-49D4-802B-A922B84729EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21905C6C-B2C3-49D4-802B-A922B84729EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21905C6C-B2C3-49D4-802B-A922B84729EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
