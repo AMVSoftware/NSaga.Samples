@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutofacSample", "AutofacSam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diagnostics", "Diagnostics\Diagnostics.csproj", "{21905C6C-B2C3-49D4-802B-A922B84729EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureTables", "AzureTables\AzureTables.csproj", "{C4F08248-8A81-46DF-96C8-15569AA93CA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +58,10 @@ Global
 		{21905C6C-B2C3-49D4-802B-A922B84729EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21905C6C-B2C3-49D4-802B-A922B84729EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21905C6C-B2C3-49D4-802B-A922B84729EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4F08248-8A81-46DF-96C8-15569AA93CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4F08248-8A81-46DF-96C8-15569AA93CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4F08248-8A81-46DF-96C8-15569AA93CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4F08248-8A81-46DF-96C8-15569AA93CA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
